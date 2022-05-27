@@ -16,3 +16,36 @@
   height: 100%;
   width: 100%;
 }
+
+.col_container {
+  height: 300px;
+  width: 300px;
+  border-radius: 30px;
+}
+.col_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+}
+
+.col_text {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  opacity: 0;
+  height: 300px;
+  width: 0px;
+  text-align: right;
+  color: black;
+  transition: width 1s, opacity 1s;
+}
+
+.col_container:hover .col_image {
+  opacity: 0.1;
+}
+
+.col_container:hover .col_text {
+  width: 150px;
+  opacity: 1;
+}

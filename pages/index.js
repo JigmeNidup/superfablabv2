@@ -367,31 +367,139 @@ export default function Home({ isLoggedIn, users, Programs, Machines, News }) {
         <div>
           <Row justify="space-evenly">
             <Col style={{ borderRadius: "30px" }}>
-              <Image
-                height={300}
-                width={300}
-                style={{ borderRadius: "30px" }}
-                src="/assets/img/home/b3.jpg"
-                alt="err"
-              />
+              <Card
+                hoverable
+                title={
+                  <b
+                    style={{
+                      fontSize: "20px",
+                      textAlign: "right",
+                      color: "gray",
+                    }}
+                  >
+                    Work With us as a volunter
+                  </b>
+                }
+                className={styles.col_container}
+              >
+                <div className={styles.col_image}>
+                  <Image
+                    height={300}
+                    width={300}
+                    style={{ borderRadius: "30px" }}
+                    src="/assets/img/home/b3.jpg"
+                    alt="err"
+                  />
+                </div>
+                {/* <b
+                  style={{
+                    position: "absolute",
+                    fontSize: "20px",
+                    top: "10%",
+                    right: "5%",
+                    textAlign: "right",
+                    color: "gray",
+                  }}
+                >
+                  Work With us as a volunter
+                </b> */}
+                <div className={styles.col_text}>
+                  <p>
+                    Get a chance to become a part of SFL and get work
+                    experience.It&apos;s an opportunity to get free access to
+                    the facilities provided by SFL.
+                  </p>
+                </div>
+              </Card>
             </Col>
             <Col style={{ borderRadius: "30px" }}>
-              <Image
-                height={300}
-                width={300}
-                style={{ borderRadius: "30px" }}
-                src="/assets/img/home/b5.jpg"
-                alt="err"
-              />
+              <Card hoverable title={
+                  <b
+                    style={{
+                      fontSize: "20px",
+                      textAlign: "right",
+                      color: "gray",
+                    }}
+                  >
+                  Apply For Internship</b>
+                } className={styles.col_container}>
+                <div className={styles.col_image}>
+                  <Image
+                    height={300}
+                    width={300}
+                    style={{ borderRadius: "30px" }}
+                    src="/assets/img/home/b5.jpg"
+                    alt="err"
+                  />
+                </div>
+                {/* <b
+                  style={{
+                    position: "absolute",
+                    fontSize: "20px",
+                    top: "10%",
+                    right: "5%",
+                    textAlign: "right",
+                    color: "gray",
+                  }}
+                >
+                  Apply For Internship
+                </b> */}
+                <div className={styles.col_text}>
+                  <p>
+                    SFL is a great place to learn and get exposure.You will be
+                    able to do research and projects with our staff and even our
+                    collaborators.
+                  </p>
+                </div>
+              </Card>
             </Col>
             <Col style={{ borderRadius: "30px" }}>
-              <Image
-                height={300}
-                width={300}
-                style={{ borderRadius: "30px" }}
-                src="/assets/img/home/sensor.jpg"
-                alt="err"
-              />
+              <Card hoverable title={
+                  <b
+                    style={{
+                      fontSize: "20px",
+                      textAlign: "right",
+                      color: "gray",
+                    }}
+                  >
+                  Become a Member
+                </b>
+                } className={styles.col_container}>
+                <div className={styles.col_image}>
+                  <Image
+                    height={300}
+                    width={300}
+                    style={{ borderRadius: "30px" }}
+                    src="/assets/img/home/sensor.jpg"
+                    alt="err"
+                  />
+                </div>
+                {/* <b
+                  style={{
+                    position: "absolute",
+                    fontSize: "20px",
+                    top: "10%",
+                    right: "5%",
+                    textAlign: "right",
+                    color: "gray",
+                  }}
+                >
+                  Become a Member
+                </b> */}
+                <div className={styles.col_text}>
+                  <p>
+                    We have great membership plans :
+                    <br />
+                    SFL Youth
+                    <br />
+                    SFL Community
+                    <br />
+                    SFL creator
+                    <br />
+                    SFl Business
+                  </p>
+                </div>
+              </Card>
             </Col>
           </Row>
         </div>

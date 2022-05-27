@@ -226,6 +226,7 @@ export default function Booking({ initialData, isLoggedIn, users }) {
         {showInductionDate ? (
           <>
             <DatePicker
+              // defaultValue={InductionDate}
               placement="bottomLeft"
               // disabledDate={(e) => {
               //   return e;
@@ -233,7 +234,7 @@ export default function Booking({ initialData, isLoggedIn, users }) {
               onChange={(e, val) => {
                 setInductionDate(val);
               }}
-            />
+            />{"   "}{InductionDate}
             <br />
             <br />
             <Checkbox
@@ -300,8 +301,8 @@ export default function Booking({ initialData, isLoggedIn, users }) {
             </div>
           </Col>
           <Col>
-            Select Machine Labs:
-            <br />
+            {/* Select Machine Labs:
+            <br /> */}
             <Tabs tabPosition="top">
               {equipmentTypeOptions.map((val, i) => {
                 let EquipmentData = Data.filter((data) => {
